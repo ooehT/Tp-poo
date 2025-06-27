@@ -1,5 +1,5 @@
 // Pessoa.cpp
-#include "Pessoa.h"
+#include "Pessoa.hpp"
 
 Pessoa::Pessoa(std::string n) : nome(n) {}
 std::string Pessoa::getNome() const { return nome; }
