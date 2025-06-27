@@ -1,15 +1,12 @@
-#include <iostream>
-#include <vector>
-#include <cstdlib>
+// Aeronave.cpp
 #include "Aeronave.hpp"
-#include <algorithm> 
 
-using namespace std;
+Aeronave::Aeronave(std::string c, std::string m, int cap, double vel, double aut)
+    : codigo(c), modelo(m), capacidade(cap), velocidadeMedia(vel), autonomia(aut) {}
 
-// Construtor da classe Aeronave
-Aeronave::Aeronave(int codigoM, int capacidadeM, double veloMediaM, double autoDistM){
-    codigo = codigoM;
-    capacidade = capacidadeM;
-    veloMedia = veloMediaM;
-    autoDist = autoDistM;
-}
+std::string Aeronave::getCodigo() const { return codigo; }
+std::string Aeronave::getModelo() const { return modelo; }
+int Aeronave::getCapacidade() const { return capacidade; }
+double Aeronave::getVelocidadeMedia() const { return velocidadeMedia; }
+double Aeronave::getAutonomia() const { return autonomia; }
+

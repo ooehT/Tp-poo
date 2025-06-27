@@ -1,16 +1,27 @@
-#include <iostream>
-#include <vector>
-#include <cstdlib>
-#include <algorithm> 
+// Aeronave.h
+#ifndef AERONAVE_H
+#define AERONAVE_H
 
-class Aeronave{
-    private:
-    int codigo;
+#include <string>
+
+class Aeronave {
+private:
+    std::string codigo;
+    std::string modelo;
     int capacidade;
-    double veloMedia;
-    double autoDist;
+    double velocidadeMedia; // milhas por hora
+    double autonomia;       // milhas
 
-    Aeronave();
-    Aeronave(int codig, int capacidade, double veloMedia, double autoDist);
+public:
+    Aeronave(std::string c, std::string m, int cap, double vel, double aut);
     
+    // Getters e Setters
+    std::string getCodigo() const;
+    std::string getModelo() const;
+    int getCapacidade() const;
+    double getVelocidadeMedia() const;
+    double getAutonomia() const;
 };
+
+#endif
+
