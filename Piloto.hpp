@@ -3,4 +3,10 @@
 #include <string>    // Para usar strings
 #include <iomanip>
 using namespace std;
-#include "Piloto.hpp"
+class Piloto {
+    private:
+    string nome;
+    int matricula;
+    string breve;
+    int horasVoo;
+};
