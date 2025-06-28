@@ -1,8 +1,12 @@
+#ifndef PASSAGEIRO_H
+#define PASSAGEIRO_H
 #include <iostream>  // Para entrada e saída padrão
 #include <vector>    // Para usar vetores
 #include <string>    // Para usar strings
 #include <iomanip>
 using namespace std;
+#include "Pessoa.hpp"
+
 class Passageiro {
     private:
     string nome;
@@ -21,5 +25,5 @@ class Passageiro {
     void adciona(vector <Passageiro>& cadastros);
     ~Passageiro();
 };
-
+#endif  
 
