@@ -5,12 +5,12 @@
 using namespace std;
 #include "Passageiros.hpp"
 #include "Pessoa.hpp"
-Passageiro::Passageiro() {
+Passageiro::Passageiro(string nome, string CPF, int numeroBilhete) : Pessoa(nome) {
     nome = "";  // Nome vazio por padrão
     CPF = "";  // Inicializa as vitórias com 0
     numeroBilhete = 0;  // Inicianliza as derrotas com 0
 }
-void adciona(vector <Passageiro>& cadastros){
+void adiciona(vector <Passageiro>& cadastros){
     Passageiro pessoaNova;
     string nomeA;
     string CPFA;

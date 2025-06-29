@@ -23,7 +23,7 @@ class Piloto : public Pessoa {
     void setMatricula(int a);
     void setBreve(string a);
     void setVoo(int a);
-    void adciona(vector <Piloto>& cadastros);
+    void adiciona(vector <Piloto>& cadastros);
     ~Piloto();
 };
 #endif  

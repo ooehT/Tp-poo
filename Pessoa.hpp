@@ -14,7 +14,7 @@ protected:
 
 public:
     Pessoa(string nome);
-    virtual ~Pessoa() = default;
+    ~Pessoa() ;
     string setNome(string a);
     string getNome() const;
 };

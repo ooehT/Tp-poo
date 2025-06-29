@@ -7,22 +7,19 @@
 using namespace std;
 #include "Pessoa.hpp"
 
-class Passageiro {
+class Passageiro : public Pessoa{
     private:
-    string nome;
     string CPF;
     int numeroBilhete;
 
     public:
     Passageiro();
     Passageiro(string nome, string CPF, int numeroBilhete);
-    string getNome(){return nome;};
     string getCPF() {return CPF;};
     int getBilhete() {return numeroBilhete;};
-    void setNome(string a);
     void setCPF(string a);
     void setBilhete(int a);
-    void adciona(vector <Passageiro>& cadastros);
+    void adiciona(vector <Passageiro>& cadastros);
     ~Passageiro();
 };
 #endif  

@@ -11,7 +11,7 @@ Piloto::Piloto(int matricula, string breve, int horasVoo, string nome) : Pessoa(
     breve = "";  // Inicializa as vitórias com 0
     horasVoo = 0;  // Inicianliza as derrotas com 0
 }
-void adciona(vector <Piloto>& cadastros){
+void adiciona(vector <Piloto>& cadastros){
     Piloto pessoaNova;
     string nomeA;
     string breveA;
