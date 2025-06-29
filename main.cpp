@@ -34,7 +34,7 @@ int main(){
         pass1.adiciona(pass);
         break;
         case 4:
-        voo1.adicionarVoo(voo);
+        
         
 
     }
